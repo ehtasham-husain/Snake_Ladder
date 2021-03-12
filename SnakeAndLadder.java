@@ -6,8 +6,10 @@ public class SnakeAndLadder {
 	int Player_1_Position = 0;
 	int SnakeORLadder; 
 	//int Player_2_Position = 0;
-
+  while (Player_1_Position < 100)
+   {
 	int Player_1 = (int)(Math.random() * 10) % 7;
+	
 	if(Player_1 == 0){
 	System.out.println(Player_1_Position);
 	}
@@ -22,11 +24,14 @@ public class SnakeAndLadder {
 	break;
 	case Snake:
 	Player_1_Position -= Player_1;
+		if (Player_1_Position < 0)
+			Player_1_Position =0;
 	break;
 	default:
 	System.out.println(Player_1_Position);
 	}
 	}
+   }
 	System.out.println(Player_1_Position);
 	}
 }
