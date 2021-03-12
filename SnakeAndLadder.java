@@ -12,7 +12,6 @@ public class SnakeAndLadder {
   while (Player_1_Position < 20 && Player_2_Position < 20)
    {
 	RollsDice = ++RollsDice;
-	//System.out.println("Number of rolls the dice = "+RollsDice);
 	int Player_1 = (int)(Math.random() * 10) % 7;
 	
 	System.out.println("Player-1 dice Number : " +Player_1);
@@ -25,8 +24,7 @@ public class SnakeAndLadder {
 	else 
 	{
 		SnakeORLadder = (int)(Math.random() * 10) % 2;
-		//System.out.println(SnakeORLadder);
-		//System.out.println(Player_1);
+		
 
 		switch(SnakeORLadder) 
 		{
