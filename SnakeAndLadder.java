@@ -5,9 +5,13 @@ public class SnakeAndLadder {
 	public static void main(String[] args) {
 	int Player_1_Position = 0;
 	int SnakeORLadder; 
+	//int  dice = 0;
+	int RollsDice = 0;
 	//int Player_2_Position = 0;
   while (Player_1_Position < 100)
    {
+	RollsDice = ++RollsDice;
+	System.out.println("Number of rolls the dice = "+RollsDice);
 	int Player_1 = (int)(Math.random() * 10) % 7;
 	
 	if(Player_1 == 0){
@@ -35,6 +39,7 @@ public class SnakeAndLadder {
 		if (Player_1_Position > 100)
 			Player_1_Position -= Player_1;
    }
+	System.out.println("Total Number of rolls the Dice : "+ RollsDice);
 	System.out.println(Player_1_Position);
 	}
 }
