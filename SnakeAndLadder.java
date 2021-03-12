@@ -31,6 +31,9 @@ public class SnakeAndLadder {
 	System.out.println(Player_1_Position);
 	}
 	}
+	System.out.println("Player-1 Position : "+Player_1_Position );
+		if (Player_1_Position > 100)
+			Player_1_Position -= Player_1;
    }
 	System.out.println(Player_1_Position);
 	}
