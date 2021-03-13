@@ -9,7 +9,7 @@ public class SnakeAndLadder {
 	
 	int RollsDice = 0;
 	
-  while (Player_1_Position < 20 && Player_2_Position < 20)
+  while (Player_1_Position < 100 && Player_2_Position < 100)
    {
 	RollsDice = ++RollsDice;
 	int Player_1 = (int)(Math.random() * 10) % 7;
@@ -79,17 +79,17 @@ public class SnakeAndLadder {
         }
 	//System.out.println("Player-1 Position : "+ Player_1_Position);
 	//System.out.println("Player-2 Position : "+ Player_2_Position);
-		if (Player_1_Position > 20)
+		if (Player_1_Position > 100)
 			Player_1_Position -= Player_1;
-		else if (Player_2_Position > 20)
+		else if (Player_2_Position > 100)
                         Player_2_Position -= Player_2;
 
    }
 	
 	System.out.println("Total Number of rolls the Dice : "+ RollsDice);
-	if (Player_1_Position == 20 )
+	if (Player_1_Position == 100 )
 	System.out.println("***PLAYER-1 WON THE GAME ***");
-	else if(Player_2_Position == 20)
+	else if(Player_2_Position == 100)
 	System.out.println("***PLAYER-2 WON THE GAME ***");
 	}
 }
